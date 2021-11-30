@@ -3,7 +3,7 @@
  *  Copyright 2021 Rebecca Pina Partidas
  */
 
-
+// Include statements
 #include<iostream>
 #include<iomanip>
 #include<fstream>
@@ -21,8 +21,10 @@
 #include<random>
 #include<stdexcept>
 
+// Defines namespace
 using namespace std;
 
+// Definition of class
 class Name_value { 
   public:
     Name_value();
@@ -34,6 +36,7 @@ class Name_value {
     int value;        
 };
 
+// Class functions
 Name_value :: Name_value (string newName, int newValue)
 {
     name = newName;
@@ -50,6 +53,7 @@ int Name_value :: getValue() const
     return value;
 }
 
+// Function prototypes
 void addName (vector<Name_value>& nameList);
 
 void printNames (vector<Name_value>& nameList);
